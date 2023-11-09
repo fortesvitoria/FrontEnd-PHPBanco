@@ -24,7 +24,7 @@
     $sql = mysqli_query($banco, "insert into cadastro values(null, '$nome', '$cpf', '$email', '$endereco');");
 
     if($sql) {
-        echo "Cliente cadastrado :)";
+        echo "<br>Cliente cadastrado :)";
     } else {
         echo "Não foi possível cadastrar o cliente :(".mysqli_error($banco);
     }
